@@ -1,0 +1,35 @@
+#page {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#title {
+    text-align: center;
+    color: white;
+}
+
+#menu {
+    color: white;
+    text-align: center;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.result {
+    list-style-type: none;
+    display: inline;
+    margin: 5px;
+}
+
+.picture {
+    height: 400px;
+    width: 275px;
+}
+
+#copy {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
