@@ -1,3 +1,28 @@
+//Array met alle posters:
+let addMoviesToDom = movies.map((item) => {
+    return item.poster;
+})
+
+let ulMovies = document.getElementById("filteredPosters")
+
+// Alle films tonen
+var i=0;
+while (i<=addMoviesToDom.length-1) {
+// Variabele ul lijst en nieuwe li
+let newLi = document.createElement("li");
+let newImage = document.createElement("IMG");
+ulMovies.appendChild(newLi);
+newLi.classList.add('result');
+newLi.appendChild(newImage);
+newImage.id="idImg" + i;
+newImage.classList.add('picture');
+document.getElementById("idImg" + i).src = addMoviesToDom[i];
+i++;
+console.log('alle films getoond');
+}
+
+addMoviesToDom;
+
 //Array met nieuwe posters:
 let addNewMoviesToDom = movies.filter((item) => {
   return item.year >= 2014;
